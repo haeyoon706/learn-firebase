@@ -17,14 +17,14 @@ const storeReducer = (state, action) => {
       return {
         isPending: false,
         document: action.payload,
-        sucess: true,
+        success: true,
         errror: null,
       };
     case "error":
       return {
         isPending: false,
         document: null,
-        sucess: false,
+        success: false,
         errror: action.payload,
       };
     default:
